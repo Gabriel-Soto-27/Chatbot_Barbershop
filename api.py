@@ -5,7 +5,7 @@ from database import inicializar_db
 app = Flask(__name__)
 app.config["WTF_CSRF_ENABLED"] = False
 
-# Número del barbero (se usa desde index.js, pero lo definimos aquí también como referencia)
+# Número del barbero
 NUMERO_BARBERO = "528715690592@c.us"  # Ejemplo: "528441234567@c.us"
 
 @app.route("/mensaje", methods=["POST"])
